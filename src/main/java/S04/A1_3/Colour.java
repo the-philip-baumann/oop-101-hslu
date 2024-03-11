@@ -1,4 +1,4 @@
-package S04_A1_3;
+package S04.A1_3;
 
 public enum Colour {
     RED,
