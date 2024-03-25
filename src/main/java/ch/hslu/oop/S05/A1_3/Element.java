@@ -1,20 +1,16 @@
 package ch.hslu.oop.S05.A1_3;
 
-public abstract class Element {
-//        extends AbstractNamed {
-
+public abstract class Element extends AbstractNamed {
     private static final String GASFOERMIG = "gasförmig";
     private static final String FEST = "fest";
     private static final String FLUESSIG = "flüssig";
 
-    private final String name;
     private final String symbol;
     private final double schmelzpunkt;
     private final double siedepunkt;
 
-    protected Element(String name, String symbol, double schmelzpunkt, double siedepunkt) {
+    protected Element(String symbol, double schmelzpunkt, double siedepunkt) {
         super();
-        this.name = name;
         this.symbol = symbol;
         this.schmelzpunkt = schmelzpunkt;
         this.siedepunkt = siedepunkt;
@@ -40,6 +36,6 @@ public abstract class Element {
 
     @Override
     public String toString() {
-        return "Element{" + "name=" + name + ", symbol=" + symbol + ", schmelzpunkt=" + schmelzpunkt + ", siedepunkt=" + siedepunkt + '}';
+        return "Element{" + "name=" + super.getName() + ", symbol=" + symbol + ", schmelzpunkt=" + schmelzpunkt + ", siedepunkt=" + siedepunkt + '}';
     }
 }

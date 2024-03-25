@@ -3,7 +3,7 @@ package ch.hslu.oop.S05.A1_3;
 public class Stickstoff extends Element {
 
     public Stickstoff() {
-        super("Stickstoff", "N", -210, -196);
+        super("N", -210, -196);
     }
 
     @Override

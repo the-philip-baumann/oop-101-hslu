@@ -18,6 +18,7 @@ public abstract class Shape {
     public abstract double getPerimeter();
 
     public abstract double getArea();
+
     public int getX() {
         return x;
     }
